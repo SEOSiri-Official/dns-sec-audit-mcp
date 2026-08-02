@@ -1,0 +1,34 @@
+[project.urls]
+Homepage = "https://www.seosiri.com/2026/08/dns-sec-audit-mcp.html"
+Documentation = "https://www.seosiri.com/2026/07/seosiri-mcp-servers.html"
+Repository = "https://github.com/SEOSiri-Official/dns-sec-audit-mcp.git"
+
+[project]
+name = "seosiri-dns-sec-audit-mcp"
+version = "1.0.0"
+description = "A sovereign, local-first MCP server for Technical SEO DNS record auditing, SOA health checks, SSL/TLS inspection, and HTTP security header analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "SEOSiri-Official", email = "info@seosiri.com" }
+]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Security"
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "requests>=2.28.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.31.1"
+]
+
+[build-system]
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
